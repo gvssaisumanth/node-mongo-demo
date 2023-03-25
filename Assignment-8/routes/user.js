@@ -117,7 +117,7 @@ function passwordValidation(password) {
 function nameValidations(name) {
   const validPattern = /^[a-zA-Z ]{2,30}$/;
 
-  if (name.match(validPattern)) {
+  if (name.trim().match(validPattern)) {
     return true;
   } else {
     return false;
